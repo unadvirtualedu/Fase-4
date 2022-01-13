@@ -1,0 +1,147 @@
+main 
+{  
+    display: grid;
+    height: 100vh;
+    grid-gap: 12px;
+    
+    grid-template-areas: 
+    "header"
+    "div"
+    "article"
+    "aside"
+    "footer";
+}
+
+main > header, aside, div, footer, img
+{
+    background-image: url(fondo.jpg);
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article
+{
+    background-color: rgba(17, 84, 161, 0.7);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.2;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 500px)
+{
+    main
+    {
+        grid-template-areas: 
+        "header     header      header"
+        "div            div         aside"
+        "article        article     aside"
+        "footer         footer      footer";
+
+       grid-template-columns: 2fr 2fr 1fr;
+       grid-template-rows: 2fr 1fr 5fr 1fr;
+    }
+}
+
+header
+{
+    grid-area: header;
+    font-size: 50px;
+}
+
+div
+{
+    grid-area: div;
+}
+
+#head
+{
+margin: auto;
+width: 500px;
+}
+
+ul, ol
+{
+    list-style: none;
+}
+
+.nav li a
+{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 80px;
+    display: block;
+}
+
+.nav li a:hover
+{
+    background-color: rgb(17, 84, 161);
+    color: white;
+}
+
+.nav li ul
+{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav > li
+{
+    float: left;
+}
+
+.nav li:hover > ul
+{
+    display: block;
+}
+
+article
+{
+    grid-area: article;
+    opacity: 2.0;
+}
+
+.texto
+{
+    font-size: 35px;
+    text-align: justify;
+    margin: 20px;
+}
+
+aside
+{
+    grid-area: aside;
+}
+
+footer
+{
+    grid-area: footer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.informacion
+{
+    position: relative;
+    bottom: -170px;
+    font-size: 35px;
+}
+
+img
+{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 600px;
+}
