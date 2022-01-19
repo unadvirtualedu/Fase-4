@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AUTOR</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    
-    <main>
-        <header><B>ETIQUETAS BÁSICAS DE HTML, ATRIBUTOS Y VALORES</B></header>
-      
-        <div id="header">
-    
-            <ul class="nav">
-                    <li><a href="index.html">INICIO</a></li>
-    
-                    <li><a href="#">TEMAS</a>
-                       <ul>
-                        <li><a href="tema_1.html">TEMA 1</a></li>
-                        <li><a href="tema_2.html">TEMA 2</a></li>
-                       </ul>                    
-                    </li>
-    
-                    <li><a href="#">RECURSOS DIGITALES</a>
-                        <ul>
-                            <li><a href="recurso_1.html">RECURSO 1</a></li>
-                            <li><a href="recurso_2.html">RECURSO 2</a></li>
-                        </ul>
-                    </li>
-    
-                    <li><a href="#">APRENDIZAJE</a>
-                        <ul>
-                            <li><a href="actividad_1.html">ACTIVIDAD 1</a></li>
-                            <li><a href="actividad_2.html">ACTIVIDAD 2</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="#">ACERCA DE</a>
-                        <ul>
-                            <li><a href="autor.html">AUTOR</a></li>
-                        </ul>
-                    </li>
-            </ul>
-    
-       </div>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="funcionalidades de las etiquetas y los atributos de puede  HTML. Aprendamos a diseñar una página web desde cero">
+        <meta name="keywords" content="HTML, etiquetas de html, etiquetas basicas de html, atributos de html, valores de html, etiquetas, valores, atributos, diseño web, herramientas de html, pagina web, recursos de html">
 
-        <article>
-           
-                <img src="yo.jpg" alt="">
-            <p class="informacion">
-               <b>Nombre:</b> Alfonso Enrique Ospino Silvera
-               <br>
-               <br>
-               <b>Código:</b> 301122_2
-               <br>
-               <br>
-               <b>Programa:</b> Ingeniería de sistemas
-               <br>
-               <br>
-               <b>Correo Electrónico:</b> aeospinosi@unadvirtual.edu.co
-               <br>
-               <br>
-               <b>Usuario Skype:</b> aeos70@hotmail.com
-            </p>
-            
-            
-        </article>
-      
-        <aside>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </aside>
-      
-        <footer>Correo: aeospinosi@unadvirtual.edu.co <br> Skype: aeos70@hotmail.com <br> Fecha: 16 de enero del 2022</footer>
-    </main>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="estilos - copia.css">
+        
+        <title>AUTOR</title>
+</head>
+
+<body>
+
+        <div class="contenedor">
+
+                <header><h1>ETIQUETAS BÁSICAS DE HTML, ATRIBUTOS Y VALORES</h1></header>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                        <a class="navbar-brand">MENU</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                                
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        TEMAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="tema_1.html">TEMA 1</a></li>
+                        <li><a class="dropdown-item" href="tema_2.html">TEMA 2</a></li>
+                        </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        RECURSOS DIGITALES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="recurso_1.html">RECURSO 1</a></li>
+                        <li><a class="dropdown-item" href="recurso_2.html">RECURSO 2</a></li>
+                        </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        APRENDIZAJE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="actividad_1.html">ACTIVIDAD 1</a></li>
+                        <li><a class="dropdown-item" href="actividad_2.html">ACTIVIDAD 2</a></li>
+                        </ul>
+                        </li>
+                
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ACERCA DE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="autor.html">AUTOR</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                        </div>
+                </nav>
+
+                <section>
+                        <img src="yo.jpg" alt="">
+                        <p class="info">
+                                <b>Nombre:</b> Alfonso Enrique Ospino Silvera
+                                <br>
+                                <br>
+                                <b>Código:</b> 301122_2
+                                <br>
+                                <br>
+                                <b>Programa:</b> Ingeniería de sistemas
+                                <br>
+                                <br>
+                                <b>Correo Electrónico:</b> aeospinosi@unadvirtual.edu.co
+                                <br>
+                                <br>
+                                <b>Usuario Skype:</b> aeos70@hotmail.com
+                        </p>
+                </section>
+
+                <aside>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD&tabs=timeline&width=250&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="250" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </aside>
+
+                <footer><p>Correo: aeospinosi@unadvirtual.edu.co <br> Skype: aeos70@hotmail.com <br> Fecha: 18 de enero del 2022</p></footer>
+
+        </div>
 
 </body>
-</html>
+</html> 

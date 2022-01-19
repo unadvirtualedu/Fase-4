@@ -1,0 +1,123 @@
+@font-face 
+{
+    font-family: Handel_Gothic;
+    src: url(HANDGOTN.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body
+{
+    background: rgb(139, 163, 194);
+}
+
+.contenedor
+{
+   width: 80%;
+   max-width: 1000px;
+   margin: 0 auto;
+   overflow: hidden;
+   background: white;
+}
+
+header, footer
+{
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    background: rgb(84, 84, 104);
+    color: white;
+}
+
+section, aside, footer
+{
+    padding: 20px;
+    float: left;
+}
+
+section
+{
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+aside
+{
+    width: 30%;
+}
+
+footer
+{
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+header, nav, footer
+{
+    font-family: Handel_Gothic;
+}
+
+section, aside
+{
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+img
+{
+    height: auto;
+    width: 100%;
+}
+
+.info
+{
+    text-align:left;
+    background: rgb(84, 84, 104);
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.video
+{
+    height: 500px;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+    section
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
+
+    .contenedor aside iframe
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .contenedor
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        display: none;
+    }
+}
